@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+// Custom Components
+import Header from './components/Header'
+import Masthead from './components/Masthead'
+import Services from './components/Services'
+import Portfolio from './components/Portfolio'
+import About from './components/About'
+import Team from './components/Team'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Header />
+     <Masthead />
+     <Services />
+     <Portfolio />
+     <About />
+     <Team />
     </div>
   );
 }
