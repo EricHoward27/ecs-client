@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="container">
             <div className="row align-items-center">
                 <div className="col-lg-4 text-lg-left">
-                    Copyright &copy; Your Website
+                    Copyright &copy; ECS 2021
                      {/* {!-- This script automatically adds the current year to your website footer-->}
                     <!-- (credit: https://updateyourfooter.com/)--> */}
                     <script>
