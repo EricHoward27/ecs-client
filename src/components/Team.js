@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Team = () => {
+const Team = ({ teamLinks }) => {
   return (
     <section className="page-section bg-light" id="team">
         <div className="container">
@@ -9,39 +9,21 @@ const Team = () => {
                 <h3 className="section-subheading text-muted">Meet our ECS team.</h3>
             </div>
             <div className="row">
+              { teamLinks && teamLinks.map(({ name, role, image}, index) =>
                 <div className="col-lg-4">
                     <div className="team-member">
-                        <img className="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
-                        <h4>Eric Howard</h4>
-                        <p className="text-muted">Lead Designer</p>
+                        <img className="mx-auto rounded-circle" src={ image } alt="..." />
+                        <h4>{ name }</h4>
+                        <p className="text-muted">{ role }</p>
                         <a className="btn btn-dark btn-social mx-2" href="#!"><i className="fab fa-twitter"></i></a>
                         <a className="btn btn-dark btn-social mx-2" href="#!"><i className="fab fa-facebook-f"></i></a>
                         <a className="btn btn-dark btn-social mx-2" href="#!"><i className="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div className="col-lg-4">
-                    <div className="team-member">
-                        <img className="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
-                        <h4>James Blankenship</h4>
-                        <p className="text-muted">Lead Marketer</p>
-                        <a className="btn btn-dark btn-social mx-2" href="#!"><i className="fab fa-twitter"></i></a>
-                        <a className="btn btn-dark btn-social mx-2" href="#!"><i className="fab fa-facebook-f"></i></a>
-                        <a className="btn btn-dark btn-social mx-2" href="#!"><i className="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div className="col-lg-4">
-                    <div className="team-member">
-                        <img className="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                        <h4>Eric Howard</h4>
-                        <p className="text-muted">Lead Developer</p>
-                        <a className="btn btn-dark btn-social mx-2" href="#!"><i className="fab fa-twitter"></i></a>
-                        <a className="btn btn-dark btn-social mx-2" href="#!"><i className="fab fa-facebook-f"></i></a>
-                        <a className="btn btn-dark btn-social mx-2" href="#!"><i className="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
+              )}
             </div>
             <div className="row">
-                <div className="col-lg-8 mx-auto text-center"><p className="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                <div className="col-lg-8 mx-auto text-center"><p className="large text-muted">Meet our amazing ECS Team who all have a part in this amazing journey.</p></div>
             </div>
         </div>
     </section>

@@ -40,6 +40,13 @@ function App() {
       invert_body: 'ECS would love for you to be apart of our journey. ECS have a vision to expand and provide many businesses with professional web applications. Join us on this epic journey!'
     }
   ]
+  const teamLinks = [
+    {
+      name: 'Eric Howard',
+      role: 'Software Engineer',
+      image: 'eric.jpg'
+    }
+  ]
   return (
     <div className="App">
      <Header />
@@ -47,7 +54,7 @@ function App() {
      <Services />
      <Portfolio portfolioLinks={portfolioLinks}/>
      <About aboutLink={aboutLink}/>
-     <Team />
+     <Team teamLinks={teamLinks}/>
      <Contact />
      <Footer />
     </div>
